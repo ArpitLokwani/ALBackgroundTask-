@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lGm-aQ-NPK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aFu-t6-Kbq">
+            <objects>
+                <viewController id="lGm-aQ-NPK" customClass="ViewController" customModule="ALBackgroundTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ia1-Vd-O3e"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vhl-5b-ANu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tvj-cG-W0e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRC-5j-Kyh">
+                                <rect key="frame" x="10" y="288" width="355" height="55"/>
+                                <color key="backgroundColor" red="0.72445598820000001" green="0.2533718546" blue="0.2161998494" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="yHN-Vj-UT6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Stop Background Task">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopBackgroundThread:" destination="lGm-aQ-NPK" eventType="touchUpInside" id="yLi-K7-YXL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpl-1c-vat">
+                                <rect key="frame" x="10" y="388" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CDr-MY-rvK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBU-rw-k0Q">
+                                <rect key="frame" x="10" y="198" width="355" height="55"/>
+                                <color key="backgroundColor" red="0.34884697129999998" green="0.72445598820000001" blue="0.06141197894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="gUh-k6-SdI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Initiate Background Task">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="initiateBackgroundThread:" destination="lGm-aQ-NPK" eventType="touchUpInside" id="H97-oI-TqM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALBackgroundTask" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXJ-lE-Gc0">
+                                <rect key="frame" x="63" y="62" width="262" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.03061558189" green="0.090929499529999999" blue="0.1750040903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QBU-rw-k0Q" firstAttribute="width" secondItem="Tvj-cG-W0e" secondAttribute="width" constant="-20" id="2XM-KJ-CHI"/>
+                            <constraint firstItem="wpl-1c-vat" firstAttribute="width" secondItem="Tvj-cG-W0e" secondAttribute="width" constant="-20" id="2nO-yG-Wpr"/>
+                            <constraint firstItem="QBU-rw-k0Q" firstAttribute="top" secondItem="ia1-Vd-O3e" secondAttribute="bottom" constant="178" id="GQG-DC-bWn"/>
+                            <constraint firstItem="NRC-5j-Kyh" firstAttribute="width" secondItem="Tvj-cG-W0e" secondAttribute="width" constant="-20" id="PhJ-6o-kdU"/>
+                            <constraint firstItem="wpl-1c-vat" firstAttribute="top" secondItem="NRC-5j-Kyh" secondAttribute="bottom" constant="45" id="Xav-zH-WbJ"/>
+                            <constraint firstItem="NRC-5j-Kyh" firstAttribute="top" secondItem="QBU-rw-k0Q" secondAttribute="bottom" constant="35" id="Xkg-40-uDm"/>
+                            <constraint firstItem="NRC-5j-Kyh" firstAttribute="centerX" secondItem="Tvj-cG-W0e" secondAttribute="centerX" id="bb8-ta-NhM"/>
+                            <constraint firstItem="QBU-rw-k0Q" firstAttribute="centerX" secondItem="Tvj-cG-W0e" secondAttribute="centerX" id="lUc-xY-KaN"/>
+                            <constraint firstItem="wpl-1c-vat" firstAttribute="centerX" secondItem="Tvj-cG-W0e" secondAttribute="centerX" id="npC-8X-jwv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="wpl-1c-vat" id="1HF-sJ-u8I"/>
+                        <outlet property="starTaskButton" destination="QBU-rw-k0Q" id="erV-2x-93r"/>
+                        <outlet property="stopTaskButton" destination="NRC-5j-Kyh" id="eFI-hv-pwt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTp-A1-6aL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.59999999999999" y="146.17691154422789"/>
+        </scene>
+    </scenes>
+</document>
